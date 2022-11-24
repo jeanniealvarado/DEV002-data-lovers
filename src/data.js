@@ -1,9 +1,11 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const characters = (data) => {
+    
+
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+//export const ejemplo= (data) => {
+ // ;
+//};
+
