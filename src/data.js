@@ -39,21 +39,22 @@ export const gFemenino = (data) => {
 
 
 
-//función ordenar libros por año de lanzamiento
-//export const ordenarLibrosAs = (data) => {
-  //  let libros = data.books;
-    //let ascendente = libros.sort(function (a, b){
-      //  return ((a.releaseDay < b.releaseDay) ? -1 : ((a.releaseDay > b.releaseDay) ? 1 : 0));
-//});
-//return ascendente;
+//función ordenar personajes alfabeticamente ascendente
+export const ordenarPersonajesAs = (data) => {
+   let personajes = data.characters;
+    let ascendente = personajes.sort(function (a, b){
+     return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
+});
+return ascendente;
 
-//};
+};
 
-//export const ordenarLibrosDesc = (data) => {
-  //  let libros = data.books;
-    //let descendente = libros.sort(function (a, b) {
-      //  return ((a.releaseDay < b.releaseDay) ? 1 : ((a.name > b.name) ? -1 : 0));
-//});
-//return descendente
+//función ordenar personajes alfabeticamente descendente
+export const ordenarPersdonajesDesc = (data) => {
+    let personajes = data.characters;
+    let descendente = personajes.sort(function (a, b) {
+     return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
+});
+return descendente
     
-//}; 
+}; 

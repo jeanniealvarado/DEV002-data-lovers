@@ -1,0 +1,17 @@
+[33mcommit dccc5d3a5c4dd731092e70458ec6531c1a6e8333[m[33m ([m[1;36mHEAD -> [m[1;32mkarla[m[33m)[m
+Author: Karla Ramirez <karlagramirezj@gmail.com>
+Date:   Sat Nov 26 10:53:01 2022 -0300
+
+    se crearon funciones de filtar personaje por genero femenino y masculino, se hicieron botones filtrar por masculino y filtrar por fenino con sus respectias funciones, ya operativos
+
+[33mcommit cd5e276c08ed0380f62ad5eadcb65466ffcf989e[m
+Author: Karla Ramirez <karlagramirezj@gmail.com>
+Date:   Thu Nov 24 01:31:16 2022 -0300
+
+    se crearon variables para almacenar los datos nombres y casas filtrados y sin filtrar
+
+[33mcommit 509f7954b7a71225bcaafbbd1367d24673fb7b22[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Mauricio Santelices <m.santelicesa@gmail.cmo>
+Date:   Fri Oct 28 12:15:53 2022 -0300
+
+    chore(init): Adds project files from curriculum
