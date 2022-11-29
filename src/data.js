@@ -1,4 +1,15 @@
 
+export const characters = (data) => {
+return(data.characters.filter(element => element.name));
+};
+
+export const personajesYcasas = (data) => {
+let filtrarPersonajes =data.characters.filter(element => element.name);
+let fpersonajes = filtrarPersonajes.map((element)=> ({name: element.name, house: element.house}));
+return fpersonajes;
+};
+
+
 //funcion filtrar por genero masculino
 export const gMasculino = (data) => {
     let traerPersonajes = data.characters;
@@ -12,9 +23,33 @@ export const gFemenino = (data) => {
     let nombreYgenero = traerPersonajes.map((element) => ({ name: element.name, gender: element.gender }));
     let generoFemale = nombreYgenero.filter(element => element.gender === "Female");
     return generoFemale;
-}
+};
 
+//función ordenar personajes alfabeticamente ascendente
+export const filterAscendent = (data) => {
+    let personajes = data.characters;
+    let nombrePersonaje = personajes.map((element) => ({ name: element.name, house: element.house, species: element.species}));
+     let ascendente = nombrePersonaje.sort(function (a, b){
+      return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
+ });
+ return ascendente;
+ 
+ };
+ //export const filterCompare= (array, cName) => {
+   // let comparedElements = array.filter(element =>element.name.toLowerCase().includes(cName.toLowerCase()))
+//return comparedElements;
+ //};
 
+ //función ordenar personajes alfabeticamente descendente
+ export const filterDescendent = (data) => {
+     let personajes = data.characters;
+     let nombrePersonaje = personajes.map((element) => ({ name: element.name, house: element.house, species: element.species}));
+     let descendente = nombrePersonaje.sort(function (a, b) {
+      return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
+ });
+ return descendente
+     
+ }; 
 
 
 //let traerPersonajes = data.characters.filter(element => element.name)
@@ -38,23 +73,3 @@ export const gFemenino = (data) => {
 //console.log(nombreCasasGeneropersonajes);
 
 
-
-//función ordenar personajes alfabeticamente ascendente
-export const ordenarPersonajesAs = (data) => {
-   let personajes = data.characters;
-    let ascendente = personajes.sort(function (a, b){
-     return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
-});
-return ascendente;
-
-};
-
-//función ordenar personajes alfabeticamente descendente
-export const ordenarPersdonajesDesc = (data) => {
-    let personajes = data.characters;
-    let descendente = personajes.sort(function (a, b) {
-     return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
-});
-return descendente
-    
-}; 
