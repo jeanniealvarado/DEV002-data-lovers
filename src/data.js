@@ -26,10 +26,8 @@ export const gFemenino = (data) => {
 };
 
 //función ordenar personajes alfabeticamente ascendente
-export const filterAscendent = (data) => {
-    let personajes = data.characters;
-    let nombrePersonaje = personajes.map((element) => ({ name: element.name, house: element.house, species: element.species}));
-     let ascendente = nombrePersonaje.sort(function (a, b){
+export const filterAscendent = (array) => {
+     let ascendente = array.sort(function (a, b){
       return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
  });
  return ascendente;
@@ -41,10 +39,8 @@ export const filterAscendent = (data) => {
  //};
 
  //función ordenar personajes alfabeticamente descendente
- export const filterDescendent = (data) => {
-     let personajes = data.characters;
-     let nombrePersonaje = personajes.map((element) => ({ name: element.name, house: element.house, species: element.species}));
-     let descendente = nombrePersonaje.sort(function (a, b) {
+ export const filterDescendent = (array) => {
+     let descendente = array.sort(function (a, b) {
       return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
  });
  return descendente

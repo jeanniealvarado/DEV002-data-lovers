@@ -4,47 +4,15 @@ import data from './data/harrypotter/data.js';
 
 
 
-let list =document.getElementById("characteresList"); 
+let lista =document.getElementById("characteresList"); 
 let ordenAscendent = document.getElementById("filterAscendent");
 let ordenDescendent = document.getElementById("filterDescendent");
+let filtroMasculino = document.getElementById ("boton1")
+let filtroFemenino = document.getElementById ("boton2")
 
 
-//boton filtrar genero masculino
-const b1 = document.getElementById ("boton1")
-b1.addEventListener("click",()=>{
-    console.log (gMasculino(data));
-    list.innerHTML = "";
-    listaElementos=(gMasculino(data));
-
-})
 
 
-//boton filtar genero femenino
-const b2 = document.getElementById ("boton2")
-b2.addEventListener("click",()=>{
-    console.log (gFemenino(data));
-    list.innerHTML = "";
-    listaElementos=(gFemenino(data));
-
-});
-
-
-//boton ordenar personajes alfabeticamente ascendente
-
-ordenAscendent.addEventListener("click",() =>{ 
-    console.log (filterAscendent(data));
-    list.innerHTML = "";
-    listaElementos=(filterAscendent(personajesNameHouse));
-});
-
-//boton ordenar personajes alfabeticamente descendente
-
-ordenDescendent.addEventListener("click",() =>{
-   console.log (filterDescendent(data));
-   list.innerHTML = "";
- listaElementos =(filterDescendent(personajesNameHouse));
-
-});
 
 let personajesNameHouse = personajesYcasas(data);
 
@@ -54,28 +22,23 @@ function listaElementos(elements) {
 elements.forEach((element) => {
   let li = document.createElement("li");
 let span = document.createElement("span");
-//let i = document.createElement("i");
 let p = document.createElement("p");
-
 li.className = "card-element"
 p.innerHTML = element.name;
-//p.className = "card-p";
-//i.className = "fa-solid fa-hat-wizard";
-//i.id = "span-i";
-//span.className = "card-span";
+
 if(element.house == "Gryffindor"){
- span.style.color = "#740001";
+ span.style.color = "#C0392B";
 } else if(element.house == "Hufflepuff"){
-  span.style.color = "#F0C75E";
+  span.style.color = "#28B463";
 }else if(element.house =="Slytherin"){
-  span.style.color = "#2A623D";
+  span.style.color = "#D4AC0D";
 }else if(element.house == "Ravenclaw"){
-  span.style.color = "#728DDA";
+  span.style.color = "#21618C";
 
 }else {
   span.style.color = "#000";
 }
-list.appendChild(li);
+lista.appendChild(li);
 //li.appendChild(span);
 //span.appendChild(i);
 li.appendChild(p);
@@ -85,7 +48,41 @@ li.appendChild(p);
 };
 
 
+//boton filtrar genero masculino
+filtroMasculino.addEventListener("click",()=>{
+  lista.innerHTML = "";
+  listaElementos(gMasculino(data));
 
+})
+
+
+//boton filtar genero femenino
+filtroFemenino.addEventListener("click",()=>{
+  lista.innerHTML = "";
+  listaElementos(gFemenino(data));
+
+});
+
+
+//boton ordenar personajes alfabeticamente ascendente
+ordenAscendent.addEventListener("click",() =>{ 
+  //console.log (filterAscendent(data));
+  lista.innerHTML = "";
+  listaElementos(filterAscendent(personajesNameHouse));
+});
+
+//boton ordenar personajes alfabeticamente descendente
+
+ordenDescendent.addEventListener("click",() =>{
+ //console.log (filterDescendent(data));
+ lista.innerHTML = "";
+listaElementos(filterDescendent(personajesNameHouse));
+
+});
+//list.appendChild(li);
+//li.appendChild(span);
+//span.appendChild(i);
+//li.appendChild(p);
 
 
 
@@ -165,3 +162,40 @@ li.appendChild(p);
 
 //let generofemale = nombreYgenero.map((element) => ({name: element.name, female: element.female}));
 //console.log(generoFemale)
+
+
+//listaElementos(characters(data));
+
+//function listaElementos(elements) {
+//elements.forEach((element) => {
+  //let li = document.createElement("li");
+//let span = document.createElement("span");
+//let i = document.createElement("i");
+//let p = document.createElement("p");
+
+//li.className = "card-element"
+//p.innerHTML = element.name;
+//p.className = "card-p";
+//i.className = "fa-solid fa-hat-wizard";
+//i.id = "span-i";
+//span.className = "card-span";
+//if(element.house == "Gryffindor"){
+ //span.style.color = "#740001";
+//} else if(element.house == "Hufflepuff"){
+  //span.style.color = "#F0C75E";
+//}else if(element.house =="Slytherin"){
+  //span.style.color = "#2A623D";
+//}else if(element.house == "Ravenclaw"){
+  //span.style.color = "#728DDA";
+
+//}else {
+  //span.style.color = "#000";
+//}
+//list.appendChild(li);
+//li.appendChild(span);
+//span.appendChild(i);
+//li.appendChild(p);
+
+//});
+
+//};
