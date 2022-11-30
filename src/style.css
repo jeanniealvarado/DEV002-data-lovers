@@ -1,0 +1,50 @@
+header{
+    font-size:xx-large;
+    font-style: italic;
+    text-align: center;
+    color: goldenrod;
+}
+body {
+background-color: rgb(3, 3, 65);
+}
+.pagina{
+    display: flex;
+}
+#mostrar{
+height: 800px;
+width: 650px;
+background-color: aliceblue;
+}
+#femenino{
+    background-color: rgb(185, 84, 16);
+    text-shadow: 3px crimson, 3px crimson
+}
+#masculino {
+    background-color: rgb(185, 84, 16);
+    text-shadow: 3px crimson, 3px crimson;
+}
+#listaG {
+    background-color: rgb(226, 183, 43);
+    height: auto;
+    width: auto;
+}
+#listaR {
+    background-color: rgb(226, 183, 43);
+    height: auto;
+    width: auto;
+}
+#listaS {
+    background-color: rgb(226, 183, 43);
+    height: auto;
+    width: auto;
+}
+#listaH {
+    background-color: rgb(226, 183, 43);
+    height: auto;
+    width: auto;
+}
+#listaHu {
+    background-color: rgb(226, 183, 43);
+    height: auto;
+    width: auto;
+}
