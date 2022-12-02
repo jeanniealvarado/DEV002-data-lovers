@@ -1,49 +1,51 @@
-header{
-    font-size:xx-large;
+header {
+    font-size: xx-large;
     font-style: italic;
     text-align: center;
     color: goldenrod;
 }
+
 body {
-background-color: rgb(3, 3, 65);
+    background-color: rgb(3, 3, 65);
 }
-.pagina{
+
+.pagina {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-#mostrar{
-height: 800px;
-width: 650px;
-background-color: aliceblue;
+
+#mostrar {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: space-around;
+    
 }
-#femenino{
+.btnCasa{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(226, 183, 43, 0);
+    color: white;
+    border: none;
+    align-items: center;
+}
+.btnCasa img {
+    height:80px;
+    width:100px;
+    padding-bottom: 5px;
+}
+#femenino {
     background-color: rgb(185, 84, 16);
     text-shadow: 3px crimson, 3px crimson
 }
+
 #masculino {
     background-color: rgb(185, 84, 16);
     text-shadow: 3px crimson, 3px crimson;
 }
-#listaG {
-    background-color: rgb(226, 183, 43);
-    height: auto;
-    width: auto;
-}
-#listaR {
-    background-color: rgb(226, 183, 43);
-    height: auto;
-    width: auto;
-}
-#listaS {
-    background-color: rgb(226, 183, 43);
-    height: auto;
-    width: auto;
-}
-#listaH {
-    background-color: rgb(226, 183, 43);
-    height: auto;
-    width: auto;
-}
-#listaHu {
+
+#lista {
     background-color: rgb(226, 183, 43);
     height: auto;
     width: auto;

@@ -2,53 +2,43 @@
 
 //import data from "./data/harrypotter/data";
 
-export const filtrarCasas1 = (data) => {
+export const filtrarCasas1 = (data, casa) => {
   let personajes= data.characters;
-  let casas= personajes.map((Element)=>({name:Element.name, house:Element.house}));
-  let casa1= casas.filter(element => element.house === "Gryffindor")
+  let casa1= personajes.filter(element => element.house === casa)
  return casa1 
  
  }; 
- export const PromedioG = (data) => {
-  let Gryffi= data.characters.filter(element => element.house === "Gryffindor")
-   Gryffi.reduce((total, currentCharacters, index, array)=>{
-    total += currentCharacters.death
-    return total
-  })
+//  export const PromedioG = (filtrarCasas1) => {
+//   let Gryffi= filtrarCasas1.filter(element => element.death === !"null")
+//   return Gryffi.reduce(total, filtrarCasas1) => total + 
+ 
 
- }
-//  let personajeG= personajes.filter(element => element.name)
-//  let casas= personajeG.map((Element)=>({house:Element.house === "Gryffindor" })); 
-  
-//}; 
-
-
+  //  Gryffi.reduce((total, currentCharacters, index, array)=>{
+  //   total += currentCharacters.death
+  //   return total
+  // })
 
 export const filtrarCasas2 = (data) => {
   let personajes2= data.characters;
-  let casas2= personajes2.map((Element)=>({name:Element.name, house:Element.house}));
-  let casaRave= casas2.filter(element => element.house === "Ravenclaw")
+  let casaRave= personajes2.filter(element => element.house === "Ravenclaw")
   return casaRave;
 };
 
 export const filtrarCasas3 = (data) => {
   let personajes3= data.characters;
-  let casas3= personajes3.map((Element)=>({name:Element.name, house:Element.house}));
-  let casaSly= casas3.filter(element => element.house === "Slytherin")
+  let casaSly= personajes3.filter(element => element.house === "Slytherin")
   return casaSly;
 };
 
 export const filtrarCasas4 = (data) => {
   let personajes4= data.characters;
-  let casas4= personajes4.map((Element)=>({name:Element.name, house:Element.house}));
-  let casaBlack= casas4.filter(element => element.house === "House of Black")
+  let casaBlack= personajes4.filter(element => element.house === "House of Black")
   return casaBlack;
 };
 
 export const filtrarCasas5 = (data) => {
   let personajes5= data.characters;
-  let casas5= personajes5.map((Element)=>({name:Element.name, house:Element.house}));
-  let casaHuf= casas5.filter(element => element.house === "Hufflepuff")
+  let casaHuf= personajes5.filter(element => element.house === "Hufflepuff")
   return casaHuf;
 };
 //export default data;
