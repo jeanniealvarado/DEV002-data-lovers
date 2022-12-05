@@ -33,12 +33,7 @@ export const filterAscendent = (array) => {
  return ascendente;
  
  };
- //export const filterCompare= (array, cName) => {
-   // let comparedElements = array.filter(element =>element.name.toLowerCase().includes(cName.toLowerCase()))
-//return comparedElements;
- //};
-
- //función ordenar personajes alfabeticamente descendente
+ 
  export const filterDescendent = (array) => {
      let descendente = array.sort(function (a, b) {
       return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
@@ -47,25 +42,5 @@ export const filterAscendent = (array) => {
      
  }; 
 
-
-//let traerPersonajes = data.characters.filter(element => element.name)
-
-//let personajes = [];//
-//console.log(personajes)//
-//traerPersonajes.filter(element => element.name);//
-//let nombrepersonajes = traerPersonajes.map((element) => ({name: element.name}));
-//let casapersonajes = traerPersonajes.map((element) => ({house: element.house}));
-//let nombreYcasaspersonajes = traerPersonajes.map((element) => ({name: element.name, house: element.house}));
-//let generopersonajes = traerPersonajes.map((element) => ({gender: element.gender}));
-
-//let nombreCasasGeneropersonajes = traerPersonajes.map((element) => ({name: element.name, house: element.house, gender: element.gender}));
-//let casapersonajes = traerPersonajes.map((element) => ({name: element.name, house: element.house}));//
-//personajes.push(nombrepersonajes);//
-//console.log(nombrepersonajes);
-//console.log(casapersonajes);
-//console.log(nombreYcasaspersonajes);
-//console.log(generopersonajes);
-//console.log(nombreYgeneropersonajes);
-//console.log(nombreCasasGeneropersonajes);
 
 
