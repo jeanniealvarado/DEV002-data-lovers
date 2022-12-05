@@ -35,18 +35,20 @@ body {
     width:100px;
     padding-bottom: 5px;
 }
-#femenino {
-    background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson
-}
 
-#masculino {
-    background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson;
-}
 
 #lista {
     background-color: rgb(226, 183, 43);
     height: auto;
     width: auto;
+}
+/*rama karla*/
+#boton1 {
+    background-color: rgb(185, 84, 16);
+    text-shadow: 3px crimson, 3px crimson
+}
+
+#boton2{
+    background-color: rgb(185, 84, 16);
+    text-shadow: 3px crimson, 3px crimson;
 }
