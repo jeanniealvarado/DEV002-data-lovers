@@ -1,10 +1,10 @@
-import { filtrarCasas1, filtrarCasas2, filtrarCasas3, filtrarCasas4, filtrarCasas5 } from './data.js';
+import { filtrarCasas1 } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 console.log(data);
-let personajes1 = data.characters
+//let personajes1 = data.characters
 // Función para crear un listado de forma dinamica 
 const divMostrar = document.getElementById("lista");
 function listaData(data) {
