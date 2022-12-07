@@ -88,7 +88,7 @@ function listaElementos(elements) {
 
   });
 
-};
+}
 
 //boton filtrar genero masculino
 filtroMasculino.addEventListener("click", () => {
