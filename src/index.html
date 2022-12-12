@@ -12,8 +12,17 @@
 </head>
 
 <body>
-  <header>Harry Potter</header>
+  <header><img src="./img/letras.png" /></header>
+  <p id="logo">Revive la magia desde casa</p>
   <main class="pagina">
+    <div id="genero" class="genero">
+      <!-- <p>Ordenar alfabeticamente</p> -->
+       <button id="filterDescendent" class="button">Descendente</button>
+       <button id="filterAscendent" class="button">Ascendente</button>
+       <!--<p>Filtrar por genero</p>-->
+       <button id="boton1" class="button">Filtrar por genero masculino</button>
+       <button id="boton2" class="button">Filtrar por genero Femenino</button>
+     </div>
 
     <div id="mostrar">
       <button type="button" id="Gryffindor" class="btnCasa"><img src="./img/gryffindor.jpg" />Gryffindor</button>
@@ -25,26 +34,10 @@
     <div id="lista" class="lista"> 
 <!-- se genera un listado de forma dinamica -->
     </div>
-
-      <p>Revive la magia desde casa</p>
-      <div>
-        <p>Ordenar alfabeticamente</p>
-        <button id=filterDescendent class="button">ordenar alfabeticamente descendente</button>
-        <button id=filterAscendent class="button">ordenar alfabeticamente ascendente</button>
+    <div  id="characteresList" class="characteresList">
+    </div>
+     
     
- 
-        <p>Filtrar por genero</p>
-        <button id=boton1 class="button">Filtrar por genero masculino</button>
-        <button id=boton2 class="button">Filtrar por genero Femenino</button>
-      </div>
-    </div>
-  </div>
-    <form>
-      <diV class="galeria">
-      <ul id="characteresList">
-      </ul>
-    </div>
-    </form>
 
     <script src="main.js" type="module"></script>
   </main>

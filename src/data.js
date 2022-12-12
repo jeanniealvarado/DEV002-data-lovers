@@ -1,8 +1,9 @@
+//import data from "./data/harrypotter/data";
 
 export const filtrarCasas1 = (data, casa) => {
   let personajes= data.characters;
   let casa1= personajes.filter(element => element.house === casa) // de los personajes se filtran por casa, en el main se encuentra el valor de cada casa, aqui solo ponemos el parametro
- return casa1 
+  return casa1 
  
  }; 
 
@@ -10,29 +11,27 @@ export const filtrarCasas1 = (data, casa) => {
 
 
 // rama karla
-export const characters = (data) => {
-return(data.characters.filter(element => element.name));
-};
+// export const characters = (data) => {
+// return(data.characters.filter(element => element.name));
+// };
 
 export const personajesYcasas = (data) => {
-let filtrarPersonajes =data.characters.filter(element => element.name);
-let fpersonajes = filtrarPersonajes.map((element)=> ({name: element.name, house: element.house}));
-return fpersonajes;
-};
-
+ let filtrarPersonajes =data.characters.map((element)=> ({name: element.name, house: element.house}));
+ return filtrarPersonajes
+ };
 
 //funcion filtrar por genero masculino
 export const gMasculino = (data) => {
     let traerPersonajes = data.characters;
-    let nombreYgenero = traerPersonajes.map((element) => ({ name: element.name, gender: element.gender }));
-    let generoMale = nombreYgenero.filter(element => element.gender === "Male");
+   // let nombreYgenero = traerPersonajes.map((element) => ({ name: element.name, gender: element.gender }));
+    let generoMale = traerPersonajes.filter(element => element.gender === "Male");
     return generoMale;
 };
 //funcion filtar por genero femenino
 export const gFemenino = (data) => {
     let traerPersonajes = data.characters;
-    let nombreYgenero = traerPersonajes.map((element) => ({ name: element.name, gender: element.gender }));
-    let generoFemale = nombreYgenero.filter(element => element.gender === "Female");
+    //let nombreYgenero = traerPersonajes.map((element) => ({ name: element.name, gender: element.gender }));
+    let generoFemale = traerPersonajes.filter(element => element.gender === "Female");
     return generoFemale;
 };
 
@@ -53,5 +52,10 @@ export const filterAscendent = (array) => {
      
  }; 
 
-
-
+export const promedio = (data) => {
+   let personajesF= data.characters
+  let personajescasa= personajesF.filter(element => element.house)
+  let fallecidos= personajescasa.filter(element => element.death)
+  return fallecidos.length 
+}
+ 

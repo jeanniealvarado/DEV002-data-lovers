@@ -1,9 +1,9 @@
-import { filtrarCasas1, characters, personajesYcasas, gMasculino, gFemenino, filterAscendent, filterDescendent } from './data.js';
+import { filtrarCasas1, gMasculino, gFemenino, filterAscendent, filterDescendent, personajesYcasas, promedio} from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(data);
+//console.log(data);
 //let personajes1 = data.characters
 // Función para crear un listado de forma dinamica 
 const divMostrar = document.getElementById("lista");
@@ -61,60 +61,50 @@ let ordenAscendent = document.getElementById("filterAscendent");
 let ordenDescendent = document.getElementById("filterDescendent");
 let filtroMasculino = document.getElementById("boton1")
 let filtroFemenino = document.getElementById("boton2")
-
-
+//let total= document.getElementById("total")
+// let totalPersonajes= promedio(data)
+// console.log(totalPersonajes)
 let personajesNameHouse = personajesYcasas(data);
+//console.log(personajesNameHouse)
+//listaElementos(characters(data));
 
-listaElementos(characters(data));
-
-function listaElementos(elements) {
-  elements.forEach((element) => {
+function listaElementos(data) {
+    lista.innerHTML = "";
+  data.forEach(element => {
     let li = document.createElement("li");
-    let estilo = document.createElement("span");
-    let p = document.createElement("p");
-
-    p.innerHTML = element.name;
-
-    if (element.gender == "Male") {
-      estilo.style.color = "#740001";
-    } else if (element.gender == "Female") {
-      estilo.style.color = "#F0C75E";
-
-    } else {
-      estilo.style.color = "#000";
-    }
+    li.textContent= element.name;
     lista.appendChild(li);
-    li.appendChild(p);
 
   });
 
-};
+}
 
 //boton filtrar genero masculino
 filtroMasculino.addEventListener("click", () => {
-  lista.innerHTML = "";
- listaElementos(gMasculino(data));
 
+  listaElementos(gMasculino(data));
 });
 
 //boton filtar genero femenino
 filtroFemenino.addEventListener("click", () => {
-  lista.innerHTML = "";
   listaElementos(gFemenino(data));
 
 });
 
 //boton ordenar personajes alfabeticamente ascendente
 ordenAscendent.addEventListener("click", () => {
-
-  lista.innerHTML = "";
   listaElementos(filterAscendent(personajesNameHouse));
 });
 
 //boton ordenar personajes alfabeticamente descendente
 
 ordenDescendent.addEventListener("click", () => {
-  lista.innerHTML = "";
   listaElementos(filterDescendent(personajesNameHouse));
 
 })
+// total.addEventListener("click", () => {
+//     console.log(totalPersonajes)
+// })
+
+let personajesfallecidos= promedio(data)
+console.log(personajesfallecidos)

@@ -1,34 +1,87 @@
 header {
-    font-size: xx-large;
-    font-style: italic;
     text-align: center;
-    color: goldenrod;
-}
 
+}
+header img {
+    height: auto;
+    width: 25%;
+   
+}
 body {
     background-color: rgb(3, 3, 65);
 }
-
-.pagina {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+*{
+    margin: 5px;
+    padding: 5px;
 }
+#logo {
 
-#mostrar {
-    display: flex;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(51, 37, 6);
+    text-align: center;
+    text-shadow: 1px 2px rgb(218, 179, 97), 1px 2px rgb(218, 182, 105);
+    width: 100%;
+    height: 30%;
+    
+    }
+.pagina {
+    display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem),1fr));
+   grid-template-rows: repeat(2,auto);
+
+   
+}
+.pagina #mostrar {
+
     flex-direction: column;
     height: 800px;
-    justify-content: space-around;
+    width: 20%;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    grid-column: 1,2;
+    grid-row: 2;
+
+}
+
+.pagina #genero {
+    /*display: flex;*/
+    flex-direction: row;
+    padding-top: 4%;
+    justify-content: space-between;
+    align-items:center;
+    grid-column: 1/7;
+    
+   
+   
+}
+
+.pagina .button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    background-color: rgb(255, 220, 107);
+    height:50px;
+    width: 150px;;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-bottom: 20%;
+    color: rgb(51, 37, 6);
+    border-radius: 40%;
     
 }
-.btnCasa{
-    display: flex;
+.pagina .btnCasa{
+ 
     flex-direction: column;
     background-color: rgba(226, 183, 43, 0);
     color: white;
     border: none;
     align-items: center;
+    height: 80px;
+    width: 100px;
+    padding: 5px;
 }
 .btnCasa img {
     height:80px;
@@ -36,19 +89,24 @@ body {
     padding-bottom: 5px;
 }
 
-
 #lista {
-    background-color: rgb(226, 183, 43);
-    height: auto;
-    width: auto;
+
+    margin-top: 5%;
+    list-style: none;
+    list-style-image: url(./img/m_m_sombrero\ \(3\).jpg);
+    grid-column: 2,5;
+    color:white
+   
+   
 }
-/*rama karla*/
-#boton1 {
-    background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson
+#characteresList{
+   
+    color:white;
+    flex-direction: column;
+    list-style: none;
+    list-style-image: url(./img/m_m_sombrero\ \(3\).jpg);
+    grid-column: 2,5;
+    
 }
 
-#boton2{
-    background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson;
-}
+/*rama karla*/
