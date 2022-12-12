@@ -61,31 +61,18 @@ let ordenAscendent = document.getElementById("filterAscendent");
 let ordenDescendent = document.getElementById("filterDescendent");
 let filtroMasculino = document.getElementById("boton1")
 let filtroFemenino = document.getElementById("boton2")
-
-
 let personajesNameHouse = personajesYcasas(data);
 
+//mostrar lista de personajes en pantalla
 listaElementos(characters(data));
 
 function listaElementos(elements) {
   elements.forEach((element) => {
     let li = document.createElement("li");
-    let estilo = document.createElement("span");
     let p = document.createElement("p");
-
     p.innerHTML = element.name;
-
-    if (element.gender == "Male") {
-      estilo.style.color = "#740001";
-    } else if (element.gender == "Female") {
-      estilo.style.color = "#F0C75E";
-
-    } else {
-      estilo.style.color = "#000";
-    }
     lista.appendChild(li);
-    li.appendChild(p);
-
+   li.appendChild(p);
   });
 
 }

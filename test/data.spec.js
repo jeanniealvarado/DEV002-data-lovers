@@ -1,4 +1,4 @@
-import { filtrarCasas1, gMasculino, gFemenino, filterAscendent, filterDescendent } from '../src/data.js';
+import { filtrarCasas1, gMasculino, gFemenino, filterAscendent, filterDescendent, personajesYcasas, characters,} from '../src/data.js';
 const data = {
   characters: [
     {
@@ -288,10 +288,113 @@ describe('pruebas para la funcion de ordenar descendente', () => {
   });
 })
 
+
+ //pruebas para la función characters (mostrar data characters)
+describe('pruebas para la funcion characters mostrar data personajes', () => {
+  it('la funcion characters debe retornar la lista de personajes', () => {
+    expect(characters(data)).toEqual([{
+      "gender": "Male",
+          "house": "Ravenclaw",
+      "id": 255,
+          "name": "Xenophilius Lovegood",
+   },
+   {
+    "gender": "Male",
+    "house": "Gryffindor",
+    "id": 1,
+    "name": "Euan Abercrombie",
+   },
+   {
+    "gender": "Female",
+    "house": "Ravenclaw",
+   "id": 533,
+    "name": "Cho Chang",
+     
+   },
+   {
+    "gender": "Male",
+    "house": "Slytherin",
+    "id": 17,
+    "name": "Avery I",
+   },
+   {
+    "gender": "Male",
+          "house": "Hufflepuff (likely)",
+        "id": 59,
+          "name": "Amelia Bones' father",
+   },
+   {
+    "gender": "Male",
+    "house": "House of Black (disowned posthumously)",
+     "id": 45,
+    "name": "Alphard Black",
+   },
+   
+
+    {"gender": "Male",
+    "house": "Gryffindor",
+      "id": 756,
+      "name": "Albus Dumbledore",
+    }]);
+  });
+
+});
+
+
+// pruebas para la función personajesYcasas (mostrar data characters)
+describe('pruebas para la funcion personajesYcasas mostrar data personajes', () => {
+  it('la funcion personajesYcasas debe retornar la lista de personajes', () => {
+    expect(personajesYcasas(data)).toEqual([{
+      "house": "Ravenclaw",
+       "name": "Xenophilius Lovegood",
+    },
+    {
+      "house": "Gryffindor",
+      "name": "Euan Abercrombie",
+    },
+    {
+      "house": "Ravenclaw",
+   "name": "Cho Chang",
+      
+    },
+    {
+      "house": "Slytherin",
+     "name": "Avery I",
+    },
+    {
+      "house": "Hufflepuff (likely)",
+       "name": "Amelia Bones' father",
+    },
+    {
+      "house": "House of Black (disowned posthumously)",
+     "name": "Alphard Black", 
+    },
+    
+  {
+    "house": "Gryffindor",
+ "name": "Albus Dumbledore",
+  },
+  ]);
+  });
+
+});
+
 // describe('anotherExample', () => {
 //   it('is a function', () => {
 //     expect(typeof anotherExample).toBe('function');
 //   });
+
+
+
+
+
+
+
+
+
+
+
+
 
 //   it('returns `anotherExample`', () => {
 //     expect(anotherExample()).toBe('OMG');
