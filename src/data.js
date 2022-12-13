@@ -7,8 +7,6 @@ export const filtrarCasas1 = (data, casa) => {
  }; 
 
 
-
-
 // rama karla
 export const characters = (data) => {
 return(data.characters.filter(element => element.name));
@@ -54,4 +52,9 @@ export const filterAscendent = (array) => {
  }; 
 
 
-
+ export const promediofallecidos = (data) => {
+let personajesF = data.characters
+let personajescasa= personajesF.filter(element =>element.house)
+let fallecidos=personajescasa.filter(element =>element.death)
+return fallecidos.length
+ }

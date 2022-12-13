@@ -1,4 +1,4 @@
-import { filtrarCasas1, characters, personajesYcasas, gMasculino, gFemenino, filterAscendent, filterDescendent } from './data.js';
+import { filtrarCasas1 ,characters, gMasculino, gFemenino, filterAscendent, filterDescendent, personajesYcasas } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -66,13 +66,13 @@ let personajesNameHouse = personajesYcasas(data);
 //mostrar lista de personajes en pantalla
 listaElementos(characters(data));
 
-function listaElementos(elements) {
-  elements.forEach((element) => {
+function listaElementos(data) {
+  lista.innerHTML = "";
+  data.forEach(element => {
     let li = document.createElement("li");
-    let p = document.createElement("p");
-    p.innerHTML = element.name;
+    li.textContent=element.name;
     lista.appendChild(li);
-   li.appendChild(p);
+  
   });
 
 }
