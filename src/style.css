@@ -43,12 +43,60 @@ body {
     width: auto;
 }
 /*rama karla*/
+
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-around;
+    grid-column: 1/7;
+}
+    
 #boton1 {
+    display: flex;
+    flex-direction: row;
     background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson
+    text-shadow: 3px crimson, 3px crimson;
+    justify-content: center;
 }
 
 #boton2{
+    display: flex;
+    flex-direction: row;
     background-color: rgb(185, 84, 16);
     text-shadow: 3px crimson, 3px crimson;
+    justify-content: center;
 }
+
+#characteresList{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+
+}
+
+#container{
+width: 100%;
+max-width: 1200px;
+height: 430px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: auto;
+}
+.card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25;
+    }
+    .card:hover{
+        background: blue;
+        cursor: pointer ;
+    }

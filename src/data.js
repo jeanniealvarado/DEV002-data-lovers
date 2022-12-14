@@ -52,7 +52,7 @@ export const filterAscendent = (array) => {
  }; 
 
 
- export const promediofallecidos = (data) => {
+ export const fallecidos = (data) => {
 let personajesF = data.characters
 let personajescasa= personajesF.filter(element =>element.house)
 let fallecidos=personajescasa.filter(element =>element.death)
