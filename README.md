@@ -24,7 +24,7 @@
 
 ## 2. Resumen del proyecto
 
-En este proyecto se contruyo una _página web_ para usuarios fanaticos de Harry Potter, la cual nos permite visualizar un 
+En este proyecto se construyo una _página web_ para usuarios fanaticos de Harry Potter, la cual nos permite visualizar un 
 conjunto de datos que se adecúe a lo que nuestro usuario necesita.
 
 Esta  página web permite **visualizar la data, filtrarla, ordenarla y hacer algún cálculo agregado**. 
@@ -119,8 +119,7 @@ En sus tiempos libres, a modo de entretenimiento.
 
 - **Prototipo de baja fidelidad Historia de Usuario 3**
 
-![Alt text](prototipo-6.png)
-
+![Alt text](prototipo-3.png)
 ***
 
 **Historia de Usuario 4**
@@ -139,21 +138,23 @@ En sus tiempos libres, a modo de entretenimiento.
 
 - **Prototipo de baja fidelidad Historia de Usuario 4**
 
-
+![Alt text](prototipo-4.png)
 ***
 ## 6. Diseño de la Interfaz de Usuario
 
 
-* Prototipo de baja fidelidad
+- **Prototipo de baja fidelidad**
 
 bocetos (_sketches_) de tu solución usando papel y lápiz. 
 
+![Alt text](prototipo%20papel%20y%20lapiz%201.jpg)
 
-* Prototipo de alta fidelidad
+![Alt text](prototipo%20papel%20y%20lapi%202.jpg)
+
+- **Prototipo de alta fidelidad**
 
 Prototipo Figma
-
-![Alt text](prototipo-alta-fidelidad(1).png)
+![Alt text](prototipo-alta-fidelidad.png)
 
 ***
 ## 7. Testeos de usabilidad

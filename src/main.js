@@ -1,4 +1,4 @@
-import { filtrarCasas1 ,characters, gMasculino, gFemenino, filterAscendent, filterDescendent, personajesYcasas } from './data.js';
+import { filtrarCasas1 ,characters, gMasculino, gFemenino, filterAscendent, filterDescendent, personajesYcasas, } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -62,6 +62,7 @@ let ordenDescendent = document.getElementById("filterDescendent");
 let filtroMasculino = document.getElementById("boton1")
 let filtroFemenino = document.getElementById("boton2")
 let personajesNameHouse = personajesYcasas(data);
+//let datosFiltrados = calcularPorcentaje(datos)
 
 //mostrar lista de personajes en pantalla
 listaElementos(characters(data));
@@ -76,6 +77,11 @@ function listaElementos(data) {
   });
 
 }
+//datosFiltrados.addEventListener("click", () =>{
+  //lista.innerHTML = "";
+  //listaElementos (calcularPorcentaje(datosFiltrados));
+//}
+//);
 
 //boton filtrar genero masculino
 filtroMasculino.addEventListener("click", () => {
@@ -105,3 +111,26 @@ ordenDescendent.addEventListener("click", () => {
   listaElementos(filterDescendent(personajesNameHouse));
 
 })
+
+//export const calcularPorcentaje = (datos){
+  //  console.log(calcularPorcentaje)
+    //let hombres = 0;
+    //let mujeres = 0;
+    //for(let i = 0; i < datos.length; i++ ){
+      //  if(datos[i].gender === "Female"){
+        //    mujeres++;
+        //}else{
+          //  hombres++;
+        //}
+    //}
+    
+    //let porcentajeMujeres = (mujeres / datos.length)*100;
+    //porcentajeMujeres = porcentajeMujeres.toFixed[1];
+    //let porcentajeHombres = (hombres / datos.length)*100;
+    //porcentajeHombres = porcentajeHombres.toFixed[1];
+    //return { porcentajeMujeres, porcentajeHombres};
+//} 
+
+
+
+
