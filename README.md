@@ -65,20 +65,33 @@ Inforación sobre los personajes, a que casa pertenecen, sexo etc, además de ve
 En sus tiempos libres, a modo de entretenimiento.
 
 ***
-## 5. Historias de usuario
+## 5. Historias de usuario  
+
 
 
 **Historia de Usuario 1**
 
-- **Yo como:** Fánatico de Harry Potter
+- **Yo como:** Fánatico de Harry Potter.
 
-- **Quiero:** Ver los nombres de todos los personajes
+- **Quiero:** Ver los nombres de todos los personajes.
 
-- **Para:** Actualizar mis conocimientos y recordar a cada uno de ellos
+- **Para:** Actualizar mis conocimientos y recordar a cada uno de ellos.
 
-- **Definición de terminado:**
 
 - **Criterios de aceptación:**
+1. La página debe mostrar todos los nombres de los personajes en pantalla.  
+2. La página debe ser responsive, es decir que se adapte a cualquier dispositivo
+
+
+- **Definición de terminado:**  
+
+✅  La página deben mostrarse todos los nombres de los personajes
+
+✅  La página esta publicada en Github Pages  
+
+✅  Todo el código debe estar en la rama main del repositorio  
+
+
 
 - **Prototipo de baja fidelidad Historia de Usuario 1**
 
@@ -87,15 +100,28 @@ En sus tiempos libres, a modo de entretenimiento.
 ***
 **Historia de Usuario 2**
 
-- **Yo como:** Fánatico de Harry Potter
+- **Yo como:** Fánatico de Harry Potter.
 
-- **Quiero:** Poder interactuar con la información y ver los nombres ordenados alfabeticamente
+- **Quiero:** Poder interactuar con la información y ver los nombres ordenados alfabéticamente.
 
-- **Para:** Ver cuales nombre empiezan con la letra A y cuales con la letra Z y así poder ampliar mis conociminetos sobre is personajes favoritos
+- **Para:** Ver cuales nombre empiezan con la letra A y cuales con la letra Z y así poder ampliar mis conocimientos sobre mis personajes favoritos.  
 
-- **Definición de terminado:**
 
 - **Criterios de aceptación:**
+1. La pagina debe contar con un boton de ordenar (nombres de los persoajes alfabéticamente) Ascendente.
+2. La pagina debe contar con un boton de ordenar (nombres de los persoajes alfabéticamente) Descendente.
+3. Al hacer click en los botones debe ordenar los nombres de la A a la Z o viceversa según sea el caso.
+4. Ser responsive, es decir que se adapte a cualquier dispositivo.  
+
+
+- **Definición de terminado:**  
+
+✅  Pasar los test unitarios
+
+✅  La página esta publicada en Github pages
+
+✅  Todo el código debe estar en la rama main del repositorio
+
 
 - **Prototipo de baja fidelidad Historia de Usuario 2**
 
@@ -104,17 +130,33 @@ En sus tiempos libres, a modo de entretenimiento.
 ***
 **Historia de Usuario 3**
 
-- **Yo como:** Fánatico de Harry Potter
+- **Yo como:** Fánatico de Harry Potter.
 
-- **Quiero:** Poder separar mis personajes por casa y por genero masculino y femenino
+- **Quiero:** Poder separar mis personajes por casa y por genero masculino y femenino.
 
-- **Para:** Saber a que casa pertecene cada personaje y ver cuales son hombres y cuales mujeres
-
-
-- **Definición de terminado:**
+- **Para:** Saber a que casa pertecene cada personaje y ver cuales son hombres y cuales mujeres.  
 
 
 - **Criterios de aceptación:**
+1. La página debe contar con 1 boton de filtrado por genero Masculino.
+2. La página debe contar con 1 boton de filtrado por genero Femenino.
+3. La página debe contar con 1 boton de filtrado por casa Gryffindor.
+4. La página debe contar con 1 boton de filtrado por casa Hufflepuff.
+5. La página debe contar con 1 boton de filtrado por casa Ravenclaw.
+6. La página debe contar con 1 boton de filtrado por casa Slytherin.
+7. Al hacer click en los botones debe mostrar los nombres de los personajes según su función
+8. La página debe ser responsive, es decir que se adapte a cualquier dispositivo.  
+
+
+- **Definición de terminado:**  
+   
+
+✅ Pasar los test unitarios  
+
+✅ La página esta publicada en Github Pages  
+
+✅ Todo el código debe estar en la rama main del repositorio  
+
 
 
 - **Prototipo de baja fidelidad Historia de Usuario 3**
@@ -130,10 +172,18 @@ En sus tiempos libres, a modo de entretenimiento.
 
 - **Para:** Saber cuantos personajes mueren durante el transcurso de la historia
 
-- **Definición de terminado:**
-
-
 - **Criterios de aceptación:**
+1. La página debe contar con un boton  de promedio personajes fallecidos.
+2. Al hacer clic en el boton de promedio personas fallecidos debe ostrar coo resultado dicho promedio
+
+
+- **Definición de terminado:**  
+
+✅  Pasar los test unitarios
+
+✅  La página esta publicada en Github Pages
+
+✅  Todo el código debe estar en la rama main del repositorio
 
 
 - **Prototipo de baja fidelidad Historia de Usuario 4**
@@ -185,8 +235,7 @@ Cómo mejoramos en nuestra propuesta final, tuvimos que mejorar nuestro  prototi
 
 
 Se escribieron Pruebas Unitarias (_tests_), para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
+_filtrar_ y _ordenar_ la data, así como _calculo_ agregado.
 
 
 ***
@@ -198,12 +247,12 @@ frameworks.
 
 ### `src/index.html`
 
-En el archivo `index.html`.Va la página que se mostrará al usuario. También nos sirvio para indicar
+En el archivo `index.html`. Va la página que se mostrará al usuario. También nos sirvio para indicar
 qué scripts se usarán y unir todo lo que hicimos.
 
 ### `src/main.js`
 
-En el archivo `src/main.js` esta todo tu código que tiene que ver con
+En el archivo `src/main.js` esta todo el código que tiene que ver con
 mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
 interacción con el DOM. Operaciones como creación de nodos, registro de
 manejadores de eventos (_event listeners_ o _event handlers_).
@@ -232,85 +281,85 @@ implementadas en el archivo `data.js`.
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+-  **Uso de HTML semántico**
 
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+-  **Uso de selectores de CSS**
 
   
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+-  **Modelo de caja (box model): borde, margen, padding**
 
 
-- [ ] **Uso de flexbox en CSS**
+-  **Uso de flexbox en CSS**
 
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+-  **Uso de selectores del DOM**
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+-  **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-- [ ] **Manipulación dinámica del DOM**
+-  **Manipulación dinámica del DOM**
 
 
 ### JavaScript
 
-- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+-  **Diferenciar entre tipos de datos primitivos y no primitivos**
 
-- [ ] **Arrays (arreglos)**
+-  **Arrays (arreglos)**
 
-- [ ] **Objetos (key, value)**
+-  **Objetos (key, value)**
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+-  **Variables (declaración, asignación, ámbito)**
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+-  **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+-  **Uso de bucles/ciclos (while, for, for..of)**
 
-- [ ] **Funciones (params, args, return)**
+-  **Funciones (params, args, return)**
 
-- [ ] **Pruebas unitarias (unit tests)**
+-  **Pruebas unitarias (unit tests)**
 
-- [ ] **Módulos de ECMAScript (ES Modules)**
+-  **Módulos de ECMAScript (ES Modules)**
 
-- [ ] **Uso de linter (ESLINT)**
+-  **Uso de linter (ESLINT)**
 
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+-  **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
-- [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
+-  **Diferenciar entre expresiones (expressions) y sentencias (statements)**
 
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
+-  **Git: Instalación y configuración**
 
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+-  **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
+-  **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+-  **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-- [ ] **GitHub: Despliegue con GitHub Pages**
+-  **GitHub: Despliegue con GitHub Pages**
 
-- [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
+-  **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 
 
 ### user-centricity
 
-- [ ] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
+-  **Diseñar un producto o servicio poniendo a la usuaria en el centro**
 
 ### product-design
 
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
+-  **Crear prototipos de alta fidelidad que incluyan interacciones**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+-  **Seguir los principios básicos de diseño visual**
 
 ### research
 
-- [ ] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
+-  **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
 
 ***
 ## 13. Herramientas
