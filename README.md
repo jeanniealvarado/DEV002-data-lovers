@@ -85,11 +85,11 @@ En sus tiempos libres, a modo de entretenimiento.
 
 - **Definición de terminado:**  
 
-✅  La página deben mostrarse todos los nombres de los personajes
+☑️  La página deben mostrarse todos los nombres de los personajes
 
-✅  La página esta publicada en Github Pages  
+☑️  La página esta publicada en Github Pages  
 
-✅  Todo el código debe estar en la rama main del repositorio  
+☑️  Todo el código debe estar en la rama main del repositorio  
 
 
 
@@ -116,11 +116,11 @@ En sus tiempos libres, a modo de entretenimiento.
 
 - **Definición de terminado:**  
 
-✅  Pasar los test unitarios
+☑️  Pasar los test unitarios.
 
-✅  La página esta publicada en Github pages
+☑️  La página esta publicada en Github pages.
 
-✅  Todo el código debe estar en la rama main del repositorio
+☑️  Todo el código debe estar en la rama main del repositorio.
 
 
 - **Prototipo de baja fidelidad Historia de Usuario 2**
@@ -144,18 +144,18 @@ En sus tiempos libres, a modo de entretenimiento.
 4. La página debe contar con 1 boton de filtrado por casa Hufflepuff.
 5. La página debe contar con 1 boton de filtrado por casa Ravenclaw.
 6. La página debe contar con 1 boton de filtrado por casa Slytherin.
-7. Al hacer click en los botones debe mostrar los nombres de los personajes según su función
+7. Al hacer click en los botones debe mostrar los nombres de los personajes según su función.
 8. La página debe ser responsive, es decir que se adapte a cualquier dispositivo.  
 
 
 - **Definición de terminado:**  
    
 
-✅ Pasar los test unitarios  
+☑️ Pasar los test unitarios.  
 
-✅ La página esta publicada en Github Pages  
+☑️ La página esta publicada en Github Pages.  
 
-✅ Todo el código debe estar en la rama main del repositorio  
+☑️ Todo el código debe estar en la rama main del repositorio.  
 
 
 
@@ -166,11 +166,11 @@ En sus tiempos libres, a modo de entretenimiento.
 
 **Historia de Usuario 4**
 
-- **Yo como:** Fánatico de Harry Potter
+- **Yo como:** Fánatico de Harry Potter.
 
-- **Quiero:** Poder ver el promedio de personajes fallecidos
+- **Quiero:** Poder ver el promedio de personajes fallecidos.
 
-- **Para:** Saber cuantos personajes mueren durante el transcurso de la historia
+- **Para:** Saber cuantos personajes mueren durante el transcurso de la historia.
 
 - **Criterios de aceptación:**
 1. La página debe contar con un boton  de promedio personajes fallecidos.
@@ -179,11 +179,11 @@ En sus tiempos libres, a modo de entretenimiento.
 
 - **Definición de terminado:**  
 
-✅  Pasar los test unitarios
+☑️  Pasar los test unitarios.
 
-✅  La página esta publicada en Github Pages
+☑️  La página esta publicada en Github Pages.
 
-✅  Todo el código debe estar en la rama main del repositorio
+☑️  Todo el código debe estar en la rama main del repositorio.
 
 
 - **Prototipo de baja fidelidad Historia de Usuario 4**
@@ -213,9 +213,9 @@ Prototipo Figma
 Durante el proyecto se realizaron  _tests_ de usabilidad con distintos usuarios, y
 en base a los resultados, tuvimos que iterar los diseños. 
 
-Los problemas de usabilidad detectados a través de los _tests_ fueron que los usuarios querian ver una pagina más interactiva, ya que solo teniamos a los personajes en formato de lista y ellos querian ver algo más interactivo, más atractivo, más entretenido.
+Los problemas de usabilidad detectados a través de los _tests_ fueron que los usuarios querian ver una pagina más interactiva, ya que solo teniamos a los personajes en formato de lista y ellos querian ver algo más interactivo, más atractivo, más entretenido. Además nos faltaba un boton en la página para pasar a la opción de filtrar por casa.
 
-Cómo mejoramos en nuestra propuesta final, tuvimos que mejorar nuestro  prototipo en donde los personajes se muestren en formato Card (tarjeta) y no como una simple lista, para así hacerlo más atractivo a la vista de nuestros usuarios.
+Cómo mejoramos en nuestra propuesta final, tuvimos que mejorar nuestro  prototipo en donde los personajes se muestren en formato Card (tarjeta) y no como una simple lista, para así hacerlo más atractivo a la vista de nuestros usuarios. También agregamos a la página principal los botones de filtrar por casa.
 
 
 ***

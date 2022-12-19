@@ -53,29 +53,21 @@ export const filterAscendent = (array) => {
 
 
 
-//export const calcularPorcentaje = (datos){
-  //  console.log(calcularPorcentaje)
-    //let hombres = 0;
-    //let mujeres = 0;
-    //for(let i = 0; i < datos.length; i++ ){
-      //  if(datos[i].gender === "Female"){
-        //    mujeres++;
-        //}else{
-          //  hombres++;
-        //}
-    //}
-    
-    //let porcentajeMujeres = (mujeres / datos.length)*100;
-    //porcentajeMujeres = porcentajeMujeres.toFixed[1];
-    //let porcentajeHombres = (hombres / datos.length)*100;
-    //porcentajeHombres = porcentajeHombres.toFixed[1];
-    //return { porcentajeMujeres, porcentajeHombres};
-//} 
 
 
- //export const fallecidos = (data) => {
-//let personajesF = data.characters
-//let personajescasa= personajesF.filter(element =>element.house)
-//let fallecidos=personajescasa.filter(element =>element.death)
-//return fallecidos.length
- //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
