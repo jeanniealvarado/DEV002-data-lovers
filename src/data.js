@@ -7,8 +7,6 @@ export const filtrarCasas1 = (data, casa) => {
  }; 
 
 
-
-
 // rama karla
 export const characters = (data) => {
 return(data.characters.filter(element => element.name));
@@ -52,6 +50,24 @@ export const filterAscendent = (array) => {
  return descendente
      
  }; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

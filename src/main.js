@@ -1,4 +1,4 @@
-import { filtrarCasas1, characters, personajesYcasas, gMasculino, gFemenino, filterAscendent, filterDescendent } from './data.js';
+import { filtrarCasas1 ,characters, gMasculino, gFemenino, filterAscendent, filterDescendent, personajesYcasas, } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -61,34 +61,27 @@ let ordenAscendent = document.getElementById("filterAscendent");
 let ordenDescendent = document.getElementById("filterDescendent");
 let filtroMasculino = document.getElementById("boton1")
 let filtroFemenino = document.getElementById("boton2")
-
-
 let personajesNameHouse = personajesYcasas(data);
+//let datosFiltrados = calcularPorcentaje(datos)
 
+//mostrar lista de personajes en pantalla
 listaElementos(characters(data));
 
-function listaElementos(elements) {
-  elements.forEach((element) => {
+function listaElementos(data) {
+  lista.innerHTML = "";
+  data.forEach(element => {
     let li = document.createElement("li");
-    let estilo = document.createElement("span");
-    let p = document.createElement("p");
-
-    p.innerHTML = element.name;
-
-    if (element.gender == "Male") {
-      estilo.style.color = "#740001";
-    } else if (element.gender == "Female") {
-      estilo.style.color = "#F0C75E";
-
-    } else {
-      estilo.style.color = "#000";
-    }
+    li.textContent=element.name;
     lista.appendChild(li);
-    li.appendChild(p);
-
+  
   });
 
-};
+}
+//datosFiltrados.addEventListener("click", () =>{
+  //lista.innerHTML = "";
+  //listaElementos (calcularPorcentaje(datosFiltrados));
+//}
+//);
 
 //boton filtrar genero masculino
 filtroMasculino.addEventListener("click", () => {
@@ -118,3 +111,10 @@ ordenDescendent.addEventListener("click", () => {
   listaElementos(filterDescendent(personajesNameHouse));
 
 })
+
+let refresh = document.getElementById("boton3");
+refresh.addEventListener('click', function() {
+            location.reload();
+
+})
+
