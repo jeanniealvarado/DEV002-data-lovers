@@ -1,9 +1,10 @@
-import { filterAscendent, filterDescendent, filtrarCasas1, gFemenino, gMasculino, personajesYcasas, } from '../src/data.js';
+import { filterAscendent, filterDescendent, filtrarCasas1, gFemenino, gMasculino, personajesYcasas, porcentaje, } from '../src/data.js';
 const data= {
   characters: [
     {
       "id": 59,
       "name": "Amelia Bones' father",
+      "death": "prior to 31 October, 1981",
       "gender": "Male",
       "house": "Hufflepuff (likely)",
      
@@ -11,6 +12,7 @@ const data= {
     {
       "id": 45,
       "name": "Alphard Black",
+      "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
       "gender":"Male",
       "house": "House of Black (disowned posthumously)",
    
@@ -18,13 +20,15 @@ const data= {
     {
       "id": 17,
       "name": "Avery I",
-      "gender": "male",
+      "death": null,
+      "gender": "Male",
       "house": "Slytherin",
       
     },
     {
       "id": 1,
       "name": "Euan Abercrombie",
+      "death": null,
       "gender":"Male",
       "house": "Gryffindor",
     
@@ -32,18 +36,21 @@ const data= {
     {
       "id": 255,
       "name": "Xenophilius Lovegood",
-      "gender":"male",
+      "death": null,
+      "gender":"Male",
       "house": "Ravenclaw",
     },
     {
       "id": 533,
       "name": "Chon Chang",
+      "death": null,
       "gender": "Female",
-      "house": "Revenclaw",
+      "house": "Ravenclaw",
     },
     {
       "id": 756,
       "name": "Albus Dumblodore",
+      "death": "30 June, 1997 (aged 115)",
       "gender": "Male",
       "house": "Gryffindor",
     }
@@ -61,12 +68,14 @@ describe('prueba para la funcion de filtrar', () => {
       "gender": "Male",
       "id": 1,
      "name": "Euan Abercrombie",
+     "death": null,
      "house": "Gryffindor",
     },
     { 
       "gender": "Male",
       "id": 756,
      "name": "Albus Dumblodore",
+     "death": "30 June, 1997 (aged 115)",
      "house": "Gryffindor",
     }
     
@@ -75,14 +84,16 @@ describe('prueba para la funcion de filtrar', () => {
    });
    it('la funcion filtrarCasas1 debe retornar los personajes que pertenecen a la casa Revenclaw', () => {
     expect(filtrarCasas1(data, "Ravenclaw")).toEqual( [ {
-      "gender": "male",
+      "gender": "Male",
       "house": "Ravenclaw",
+      "death": null,
       "id": 255,
       "name": "Xenophilius Lovegood"
     },
     {
       "gender": "Female",
       "house": "Ravenclaw",
+      "death": null,
       "id": 533,
       "name": "Chon Chang"
     }
@@ -90,8 +101,9 @@ describe('prueba para la funcion de filtrar', () => {
   });
   it('la funcion filtrarCasas1 debe retornar los personajes que pertenecen a la casa Slytherin', () => {
     expect(filtrarCasas1(data, "Slytherin")).toEqual( [ {
-      "gender": "male",
+      "gender": "Male",
       "house": "Slytherin",
+      "death": null,
       "id": 17,
       "name": "Avery I"
       
@@ -103,6 +115,7 @@ describe('prueba para la funcion de filtrar', () => {
       "id": 45,
       "name": "Alphard Black",
       "house": "House of Black (disowned posthumously)",
+      "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
    
     }]);
   });
@@ -110,6 +123,7 @@ describe('prueba para la funcion de filtrar', () => {
     expect(filtrarCasas1(data, "Hufflepuff (likely)")).toEqual( [  {
       "gender": "Male",
       "house": "Hufflepuff (likely)",
+      "death": "prior to 31 October, 1981",
       "id": 59,
       "name": "Amelia Bones' father",
       
@@ -120,7 +134,7 @@ describe('prueba para la funcion de filtrar', () => {
   }) 
   describe('Prueba para filtar por nombre y casa', () => {
     it('la funcion personajesYcasas debe retornar los personajes con su nombre y su casa', () => {
-    expect(personajesYcasas(data.characters)).toEqual([
+    expect(personajesYcasas(data)).toEqual([
       {  "house": "Hufflepuff (likely)",
         "name": "Amelia Bones' father"
        
@@ -141,7 +155,7 @@ describe('prueba para la funcion de filtrar', () => {
         "name": "Xenophilius Lovegood"
         
       },
-      {  "house": "Revenclaw",
+      {  "house": "Ravenclaw",
         "name": "Chon Chang"
        
       },
@@ -157,41 +171,53 @@ describe('prueba para la funcion de filtrar', () => {
 
 describe('Prueba para filtar por genero masculino', () => {
      it('la funcion gMasculino debe retornar los personajes que pertenecen a gender Male', () => {
-     expect(gMasculino(data, "male")).toEqual([{
+     expect(gMasculino(data, "Male")).toEqual([
+      
+    
+    { 
       "gender": "Male",
-      "house":"Hufflepuff (likely)",
+      "house": "Hufflepuff (likely)",
+      "death": "prior to 31 October, 1981",
       "id": 59,
-      "name": "Amelia Bones' father"
-     },
-     {
-      "gender": "Male",
+      "name": "Amelia Bones' father",
+     
+    },
+    {
+      "gender":"Male",
       "house": "House of Black (disowned posthumously)",
-      "id":45,
-      "name": "Alphard Black"
-     },
-     {
-      "gender": "male",
-      "house":"Slytherin",
-      "id":17,
-      "name": "Avery I"
-     },
-     {"gender":"male",
-     "house": "Ravenclaw",
+      "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
+      "id": 45,
+      "name": "Alphard Black",
+    
+    },
+    
+    { "gender": "Male",
+      "house": "Slytherin",
+      "death":null,
+      "id": 17,
+      "name": "Avery I",
+      
+    },
+    {"gender":"Male",
+      "house": "Gryffindor",
+      "death": null,
+      "id": 1,
+      "name": "Euan Abercrombie",
+    
+    },
+    { "gender":"Male",
+      "house": "Ravenclaw",
+      "death": null,
       "id": 255,
-      "name": "Xenophilius Lovegood"
+      "name": "Xenophilius Lovegood",
     },
      {
       "gender": "Male",
       "house": "Gryffindor",
-      "id": 1,
-      "name": "Euan Abercrombie"
-     },
-     {
-      "gender": "Male",
-      "house": "Gryffindor",
+      "death": "30 June, 1997 (aged 115)",
       "id": 756,
-      "name": "Albus Dumblodore"
-     }
+      "name": "Albus Dumblodore",
+     },
 
     ]);
   })
@@ -199,12 +225,14 @@ describe('Prueba para filtar por genero masculino', () => {
  describe('Prueba para filtar por genero Femenino', () => {
   it('la funcion gFemenino debe retornar los personajes que pertenecen a gender Female', () => {
   expect(gFemenino(data, "Female")).toEqual([
-    {
-   "gender": "Female",
-   "house": "Revenclaw",
-   "id": 533,
-   "name": "Chon Chang",
-  }])
+    { 
+     "gender": "Female",
+     "house": "Ravenclaw",
+     "death":null,
+     "id": 533,
+     "name": "Chon Chang",
+    },
+  ])
   })
  });
  describe('Prueba para la funcion ordenar ascendente', () => {
@@ -213,43 +241,50 @@ expect(filterAscendent(data.characters)).toEqual([
   {
     "gender": "Male",
     "house": "Gryffindor",
+    "death": "30 June, 1997 (aged 115)",
     "id": 756,
     "name": "Albus Dumblodore"
   },
   {
     "gender": "Male",
     "house": "House of Black (disowned posthumously)",
+    "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
     "id": 45,
     "name": "Alphard Black"
   },
   {
     "gender": "Male",
     "house": "Hufflepuff (likely)",
+    "death": "prior to 31 October, 1981",
     "id": 59,
     "name": "Amelia Bones' father"
   },
   {
       
-      "gender": "male",
+      "gender": "Male",
       "house": "Slytherin",
+      "death": null,
       "id": 17,
       "name": "Avery I"
   },
   {
     "gender": "Female",
-    "house": "Revenclaw",
+    "house": "Ravenclaw",
+    "death": null,
     "id": 533,
     "name": "Chon Chang"
   },
   {
     "gender":"Male",
     "house": "Gryffindor",
+    "death": null,
     "id": 1,
     "name": "Euan Abercrombie"
   },
   {
-    "gender":"male",
+    "gender":"Male",
     "house": "Ravenclaw",
+    "death": null,
     "id": 255,
     "name": "Xenophilius Lovegood"
   }])
@@ -259,46 +294,106 @@ describe('Prueba para la funcion ordenar descendente', () => {
   it('la funcion filterDescendent debe retornar los personajes ordenados ascendentemente', () => {
   expect(filterDescendent(data.characters)).toEqual([
     {
-      "gender":"male",
+      "gender":"Male",
       "house": "Ravenclaw",
+      "death": null,
       "id": 255,
       "name": "Xenophilius Lovegood"
     },
     {
       "gender":"Male",
       "house": "Gryffindor",
+      "death": null,
       "id": 1,
       "name": "Euan Abercrombie"
     },
     {
       "gender": "Female",
-      "house": "Revenclaw",
+      "house": "Ravenclaw",
+      "death": null,
       "id": 533,
       "name": "Chon Chang"
     },
     {
-      "gender": "male",
+      "gender": "Male",
       "house": "Slytherin",
+      "death": null,
       "id": 17,
       "name": "Avery I"
   },
   {
     "gender": "Male",
     "house": "Hufflepuff (likely)",
+    "death": "prior to 31 October, 1981",
     "id": 59,
     "name": "Amelia Bones' father"
   },
   {
     "gender": "Male",
     "house": "House of Black (disowned posthumously)",
+    "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
     "id": 45,
     "name": "Alphard Black"
   },
   {
     "gender": "Male",
     "house": "Gryffindor",
+    "death": "30 June, 1997 (aged 115)",
     "id": 756,
     "name": "Albus Dumblodore"
   }])
 })
 });
+
+describe('Prueba para la funcion porcentaje', () => {
+  it('la funcion porcentaje debe retornar el porcentaje de personajes fallecidos', () => {
+  expect(porcentaje(data)).toEqual([
+    {   "gender": "Male",
+    "house": "Hufflepuff (likely)",
+    "death": "prior to 31 October, 1981",
+    "id": 59,
+    "name": "Amelia Bones' father"
+    },
+    { 
+      "gender": "Male",
+      "house": "House of Black (disowned posthumously)",
+      "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
+      "id": 45,
+      "name": "Alphard Black"
+    },
+    { "gender": "Male",
+    "house": "Slytherin",
+    "death": null,
+    "id": 17,
+    "name": "Avery I"
+      
+    },
+    { "gender":"Male",
+    "house": "Gryffindor",
+    "death": null,
+    "id": 1,
+    "name": "Euan Abercrombie"
+    
+    },
+    { "gender":"Male",
+    "house": "Ravenclaw",
+    "death": null,
+    "id": 255,
+    "name": "Xenophilius Lovegood"
+      
+    },
+    { "gender": "Female",
+    "house": "Ravenclaw",
+    "death": null,
+    "id": 533,
+    "name": "Chon Chang"
+     
+    },
+    { "gender": "Male",
+    "house": "Gryffindor",
+    "death": "30 June, 1997 (aged 115)",
+    "id": 756,
+    "name": "Albus Dumblodore"
+      
+  }])
+  })})

@@ -52,10 +52,10 @@ export const filterAscendent = (array) => {
      
  }; 
 
-export const promedio = (data) => {
+export const porcentaje = (data ) => {
    let personajesF= data.characters
-  let personajescasa= personajesF.filter(element => element.house)
-  let fallecidos= personajescasa.filter(element => element.death)
-  return fallecidos.length 
-}
- 
+ // let personajescasa= personajesF.filter(element => element.house === "Gryffindor")
+  let fallecidos= personajesF.filter(element => element.death)
+ return fallecidos.length * 100 / 707
+  }
+//
