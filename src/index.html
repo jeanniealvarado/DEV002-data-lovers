@@ -12,9 +12,24 @@
 </head>
 
 <body>
-  <header>Harry Potter</header>
+  <header><img src="./img/letras.png" /></header>
+  <p id="logo">Revive la magia desde casa</p>
   <main class="pagina">
-
+    <div id="genero" class="genero">
+      <!-- <p>Ordenar alfabeticamente</p> -->
+       <button id="filterDescendent" class="button">Descendente</button>
+       <button id="filterAscendent" class="button">Ascendente</button>
+       <!--<p>Filtrar por genero</p>-->
+       <button id="boton1" class="button">Filtrar por genero masculino</button>
+       <button id="boton2" class="button">Filtrar por genero Femenino</button>
+       <button id= "boton3">Actualizar</button>
+      
+     </div>
+     <div id="bienvenida" class="bienvenida"><img src="./img/6f05534a597323fe7d7726e06537ee5b.png"/>Bienevenidos a este espacio mágico donde podrás encontrar los distintos personajes
+      de la saga de Harry Potter, identificarlos por casa y género, ademas podras descubrir el promedio de los personajes que han fallecido.
+    </div>
+    <div class="porcentaje"><img src="./img/a6afb2fbf94c127fc39c379d072aa795.png"/></div>
+    <div id="resultado"> </div>
     <div id="mostrar">
       <button type="button" id="Gryffindor" class="btnCasa"><img src="./img/gryffindor.jpg" />Gryffindor</button>
       <button type="button" id="Ravenclaw" class="btnCasa"><img src="./img/ravenclaw.jpg"  />Ravenclaw</button>
@@ -22,29 +37,16 @@
       <button type="button" id="House of Black" class="btnCasa"><img src="./img/house.webp"  /> House of Black</button>
       <button type="button" id="Hufflepuff" class="btnCasa"><img src="./img/Hufflepuff.jpg"  /> Hufflepuff</button>
     </div>
-    <div id="lista" class="lista"> 
 <!-- se genera un listado de forma dinamica -->
     </div>
-
-    <p class="parrafo">Revive la magia desde casa</p>
-      <div id="botones">
-         
-      <button id= "filterDescendent" class="button">ordenar alfabeticamente descendente</button>
-        <button id= "filterAscendent" class="button">ordenar alfabeticamente ascendente</button>       
-        <button id= "boton1" class="button">Filtrar por genero masculino</button>
-        <button id= "boton2" class="button">Filtrar por genero Femenino</button>
-        
-        <div id = "porcentaje"> porcentaje </div>
-          <p>personajes</p>
-        
+    <!--rama karla-->
+      
   
             <div id="characteresList" class="characteresList">
           
             
             </div>
-      
-
-            <button id= "boton3">Actualizar</button>
+    
   
      
       </div>

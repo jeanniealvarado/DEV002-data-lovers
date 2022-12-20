@@ -1,102 +1,135 @@
 header {
-    font-size: xx-large;
-    font-style: italic;
     text-align: center;
-    color: goldenrod;
-}
 
+}
+header img {
+    height: auto;
+    width: 25%;
+   
+}
 body {
+    background-image: url(./img/317859-free-harry-potter-background-2000x1199.jpg);
+}
+*{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 10px;
     /*background-color: rgb(3, 3, 65);*/
 }
+#logo {
 
-.pagina {
-    display: flex;
-    flex-direction: row;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(51, 37, 6);
+    text-align: center;
+    text-shadow: 1px 2px rgb(218, 179, 97), 1px 2px rgb(218, 182, 105);
+    width: 100%;
+    height: 30%;
+    
+    }
+ /*.pagina {
+  display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem),1fr));
+   grid-template-rows: repeat(2,auto);
+   grid-column-gap: 5px;
+   
+}*/
+.pagina #mostrar {
+display: flex;
+   /* flex-direction: column;*/
+    height: 100px;
+    /*width: 20%;*/
     justify-content: space-evenly;
-}
-
-#mostrar {
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    justify-content: space-around;
+    padding-top: 2%;
+    /*grid-column: 3,5;
+    grid-row: 2;*/
     
 }
-.btnCasa{
-    display: flex;
+
+.pagina #genero {
+    margin-left: 10%;
+    flex-direction: row;
+    padding-top: 4%;
+    /*justify-content: space-between;*/
+    align-items:flex-end;
+    grid-column: 1/7;
+    
+   
+   
+}
+
+.pagina .button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    flex-direction: column;
+    border: none;
+    align-items:center;
+    background-color: rgb(255, 220, 107);
+    height:50px;
+    width: 150px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    border-bottom: 20%;
+    color: rgb(51, 37, 6);
+    border-radius: 40%;
+    
+}
+.pagina .btnCasa{
+ 
     flex-direction: column;
     background-color: rgba(226, 183, 43, 0);
     color: white;
     border: none;
     align-items: center;
+    height: 80px;
+    width: 100px;
+    padding: 5px;
 }
 .btnCasa img {
     height:80px;
     width:100px;
     padding-bottom: 5px;
 }
-
-
-#lista {
-    background-color: rgb(226, 183, 43);
+.bienvenida{
+    background-color: rgba(245, 245, 220, 0.384);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-style: italic;
     height: auto;
-    width: auto;
+    align-items: center;
+    grid-column: 1,3;
+    grid-row: 2;
+    color: white;
+
 }
-/*rama karla*/
+.bienvenida img{
+    height: auto;
+    width: 150px;
+}
 
 
-#botones {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: space-around;
-    grid-column: 1/7;
-}
-    
-#boton1 {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson;
-    justify-content: center;
-}
-
-#boton2{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(185, 84, 16);
-    text-shadow: 3px crimson, 3px crimson;
-    justify-content: center;
-}
 
 #characteresList{
     display: flex;
-    flex-direction: column;
-  
-    justify-content: center;
-
+    color:white;
+    flex-wrap: wrap;
+    list-style: none;
+    list-style-image: url(./img/m_m_sombrero\ \(3\).jpg);
+   
+    
+}
+#characteresList li{
+    width: 150px;
+}
+.porcentaje{
+    margin-left: 30%;
 }
 
-#container{
-width: 100%;
-max-width: 1200px;
-height: 430px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin: auto;
+#resultado{
+    color:white;
+    align-content: center;
+    margin-left: 50%;
+   
 }
-.card{
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25;
-    }
-    .card:hover{
-        background: blue;
-        cursor: pointer ;
-    }
+/*rama karla*/
