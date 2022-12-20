@@ -347,53 +347,5 @@ describe('Prueba para la funcion ordenar descendente', () => {
 
 describe('Prueba para la funcion porcentaje', () => {
   it('la funcion porcentaje debe retornar el porcentaje de personajes fallecidos', () => {
-  expect(porcentaje(data)).toEqual([
-    {   "gender": "Male",
-    "house": "Hufflepuff (likely)",
-    "death": "prior to 31 October, 1981",
-    "id": 59,
-    "name": "Amelia Bones' father"
-    },
-    { 
-      "gender": "Male",
-      "house": "House of Black (disowned posthumously)",
-      "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
-      "id": 45,
-      "name": "Alphard Black"
-    },
-    { "gender": "Male",
-    "house": "Slytherin",
-    "death": null,
-    "id": 17,
-    "name": "Avery I"
-      
-    },
-    { "gender":"Male",
-    "house": "Gryffindor",
-    "death": null,
-    "id": 1,
-    "name": "Euan Abercrombie"
-    
-    },
-    { "gender":"Male",
-    "house": "Ravenclaw",
-    "death": null,
-    "id": 255,
-    "name": "Xenophilius Lovegood"
-      
-    },
-    { "gender": "Female",
-    "house": "Ravenclaw",
-    "death": null,
-    "id": 533,
-    "name": "Chon Chang"
-     
-    },
-    { "gender": "Male",
-    "house": "Gryffindor",
-    "death": "30 June, 1997 (aged 115)",
-    "id": 756,
-    "name": "Albus Dumblodore"
-      
-  }])
+  expect(porcentaje(data)).toBe(0.4243281471004243) 
   })})

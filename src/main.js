@@ -3,27 +3,7 @@ import { filtrarCasas1, gMasculino, gFemenino, filterAscendent, filterDescendent
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-//console.log(data);
-//let personajes1 = data.characters
-// Función para crear un listado de forma dinamica 
 
-
-
-
-
-  //   console.log(mostrarPromedio)
-
-
-// function listaData(data) {
-//   divMostrar.innerHTML = ""
-//   data.forEach(d => {
-//     //aqui podemos agregar el calculo agregado 
-//     const lista = document.createElement("li")
-//     lista.textContent = d.name
-//     divMostrar.appendChild(lista)
-
-//   })
-// }
 
 const btnGryffindor = document.getElementById("Gryffindor")
 const btnRavenclaw = document.getElementById("Ravenclaw")
@@ -108,12 +88,9 @@ ordenDescendent.addEventListener("click", () => {
   listaElementos(filterDescendent(personajesNameHouse));
 
 })
-// total.addEventListener("click", () => {
-//     console.log(totalPersonajes)
-// })
+
 
 let personajesfallecidos = Math.round(porcentaje(data))
-//console.log(personajesfallecidos)
-let resultado= document.getElementById("resultado")
 
+let resultado= document.getElementById("resultado")
 resultado.innerHTML= personajesfallecidos + "%"
