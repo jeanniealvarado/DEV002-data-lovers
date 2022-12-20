@@ -94,3 +94,9 @@ let personajesfallecidos = Math.round(porcentaje(data))
 
 let resultado= document.getElementById("resultado")
 resultado.innerHTML= personajesfallecidos + "%"
+let refresh = document.getElementById("boton3");
+refresh.addEventListener('click', function() {
+            location.reload();
+
+})
+

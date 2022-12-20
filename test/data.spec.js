@@ -7,7 +7,7 @@ const data= {
       "death": "prior to 31 October, 1981",
       "gender": "Male",
       "house": "Hufflepuff (likely)",
-     
+
     },
     {
       "id": 45,
@@ -15,7 +15,7 @@ const data= {
       "death": "Between 3 November 1976 and 3 November 1977 (aged 38 - 52)",
       "gender":"Male",
       "house": "House of Black (disowned posthumously)",
-   
+
     },
     {
       "id": 17,
@@ -23,7 +23,7 @@ const data= {
       "death": null,
       "gender": "Male",
       "house": "Slytherin",
-      
+
     },
     {
       "id": 1,
@@ -31,7 +31,7 @@ const data= {
       "death": null,
       "gender":"Male",
       "house": "Gryffindor",
-    
+
     },
     {
       "id": 255,

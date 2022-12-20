@@ -8,8 +8,6 @@ export const filtrarCasas1 = (data, casa) => {
 };
 
 
-
-
 // rama karla
 // export const characters = (data) => {
 // return(data.characters.filter(element => element.name));
@@ -58,3 +56,21 @@ export const porcentaje = (data) => {
     return fallecidos.length * 100 / 707
 }
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
