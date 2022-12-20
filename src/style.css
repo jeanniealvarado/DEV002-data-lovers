@@ -5,9 +5,9 @@ header {
     color: goldenrod;
 }
 
-body {
-    /*background-color: rgb(3, 3, 65);*/
-}
+/*body {
+    background-color: rgb(3, 3, 65);*/
+
 
 .pagina {
     display: flex;
