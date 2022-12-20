@@ -112,25 +112,9 @@ ordenDescendent.addEventListener("click", () => {
 
 })
 
-//export const calcularPorcentaje = (datos){
-  //  console.log(calcularPorcentaje)
-    //let hombres = 0;
-    //let mujeres = 0;
-    //for(let i = 0; i < datos.length; i++ ){
-      //  if(datos[i].gender === "Female"){
-        //    mujeres++;
-        //}else{
-          //  hombres++;
-        //}
-    //}
-    
-    //let porcentajeMujeres = (mujeres / datos.length)*100;
-    //porcentajeMujeres = porcentajeMujeres.toFixed[1];
-    //let porcentajeHombres = (hombres / datos.length)*100;
-    //porcentajeHombres = porcentajeHombres.toFixed[1];
-    //return { porcentajeMujeres, porcentajeHombres};
-//} 
+let refresh = document.getElementById("boton3");
+refresh.addEventListener('click', function() {
+            location.reload();
 
-
-
+})
 
