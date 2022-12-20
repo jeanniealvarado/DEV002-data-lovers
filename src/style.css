@@ -126,5 +126,10 @@ display: flex;
     margin-left: 30%;
 }
 
-
+#resultado{
+    color:white;
+    align-content: center;
+    margin-left: 50%;
+   
+}
 /*rama karla*/
