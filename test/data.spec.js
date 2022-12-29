@@ -236,7 +236,11 @@ describe('Prueba para filtar por genero masculino', () => {
   })
  });
  describe('Prueba para la funcion ordenar ascendente', () => {
-it('la funcion filterAscendent debe retornar los personajes ordenados ascendentemente', () => {
+it ("Es una funcion", () => {
+  expect (typeof (filterAscendent)).toBe("function")
+})
+
+  it('la funcion filterAscendent debe retornar los personajes ordenados ascendentemente', () => {
 expect(filterAscendent(data.characters)).toEqual([
   {
     "gender": "Male",

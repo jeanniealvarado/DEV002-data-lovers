@@ -51,8 +51,7 @@ let filtroMasculino = document.getElementById("boton1")
 let filtroFemenino = document.getElementById("boton2")
 
 let personajesNameHouse = personajesYcasas(data);
-//console.log(personajesNameHouse)
-//listaElementos(characters(data));
+
 
 function listaElementos(data) {
   lista.innerHTML = "";
@@ -82,13 +81,14 @@ ordenAscendent.addEventListener("click", () => {
   listaElementos(filterAscendent(personajesNameHouse));
 });
 
+
 //boton ordenar personajes alfabeticamente descendente
 
 ordenDescendent.addEventListener("click", () => {
+  
   listaElementos(filterDescendent(personajesNameHouse));
 
 })
-
 
 let personajesfallecidos = Math.round(porcentaje(data))
 

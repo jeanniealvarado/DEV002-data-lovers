@@ -19,10 +19,10 @@
 ***
 
 ## 1. Preámbulo
-
+Harry Potter es una saga de magia en la que destaca por dividirse entre casas magicas que resguardan a cierta cantidad de alumnos dentro de la escuela de Hogwarts. Harry es el protagonista de la saga, y en base a él se desarrolla toda la trama, por haber sobrevivido al ataque de uno de los magos más malvados cuando mato a sus padres. 
 ***
 
-## 2. Resumen del proyecto
+## 2. Resumen del proyecto 
 
 En este proyecto se construyo una _página web_ para usuarios fanaticos de Harry Potter, la cual nos permite visualizar un 
 conjunto de datos que se adecúe a lo que nuestro usuario necesita.
@@ -35,7 +35,7 @@ entendiendo lo que el usuario necesita.
 
 ***
 ## 3. Definición del producto
-
+Una página web que ofrece la interaccion con el usuario, en este caso fanáticos de la saga Harry Potter y les permite, visualizar a sus personajes favoritos.
 ***
 
 ## 4. Relación del usuario con el producto 
@@ -81,13 +81,15 @@ En sus tiempos libres, a modo de entretenimiento.
 - **Criterios de aceptación:**
 1. La página debe mostrar todos los nombres de los personajes en pantalla.  
 2. La página debe ser responsive, es decir que se adapte a cualquier dispositivo
+3. Deben existir 5 botones interactivos para filtrar y mostrar la data por casa
+4. Deben existir dos botones para filtrar y mostrar la data por género
 
 
 - **Definición de terminado:**  
 
 ☑️  La página deben mostrarse todos los nombres de los personajes
 
-☑️  La página esta publicada en Github Pages  
+☑️  Tener y pasar los test de las funciones de filtrado
 
 ☑️  Todo el código debe estar en la rama main del repositorio  
 
@@ -173,8 +175,8 @@ En sus tiempos libres, a modo de entretenimiento.
 - **Para:** Saber cuantos personajes mueren durante el transcurso de la historia.
 
 - **Criterios de aceptación:**
-1. La página debe contar con un boton  de promedio personajes fallecidos.
-2. Al hacer clic en el boton de promedio personas fallecidos debe ostrar coo resultado dicho promedio
+1. La página debe mostrar en su inicio, con un titulo llamativo el promedio de personajes fallecidos
+2. se muestra el porcentaje centrado 
 
 
 - **Definición de terminado:**  
@@ -215,7 +217,7 @@ en base a los resultados, tuvimos que iterar los diseños.
 
 Los problemas de usabilidad detectados a través de los _tests_ fueron que los usuarios querian ver una pagina más interactiva, ya que solo teniamos a los personajes en formato de lista y ellos querian ver algo más interactivo, más atractivo, más entretenido. Además nos faltaba un boton en la página para pasar a la opción de filtrar por casa.
 
-Cómo mejoramos en nuestra propuesta final, tuvimos que mejorar nuestro  prototipo en donde los personajes se muestren en formato Card (tarjeta) y no como una simple lista, para así hacerlo más atractivo a la vista de nuestros usuarios. También agregamos a la página principal los botones de filtrar por casa.
+Cómo mejoramos en nuestra propuesta final, tuvimos que mejorar nuestro  prototipo en donde los personajes se mostraran en forma de lista extendida dentro de todo un div al centro de la pagina, alineados y guardando espacio adecuado entre ellos, para así hacerlo más atractivo a la vista de nuestros usuarios. También agregamos a la página principal los botones de filtrar por casa.
 
 
 ***
